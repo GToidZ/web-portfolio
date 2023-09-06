@@ -1,0 +1,30 @@
+@tailwind components;
+
+@layer components {
+    /* Homepage */
+    .upper-container {
+        height: 40vh;
+        @apply flex place-items-center justify-center;
+    }
+    .lower-container {
+        height: 60vh;
+        @apply flex place-items-center justify-center;
+    }
+    .title-container {
+        min-width: 100%;
+        min-height: 100%;
+        padding-right: 1rem;
+        @apply flex flex-col items-end justify-center select-none;
+    }
+    .home-card {
+        width: 100%;
+        height: 100%;
+        padding: 2.5rem;
+        transition: transform 0.3s ease;
+        border-radius: 3rem;
+        @apply text-xl flex flex-row justify-between items-end select-none;
+    }
+    .home-card:hover {
+        transform: scale(0.99, 0.99);
+    }
+}
